@@ -1,7 +1,7 @@
 
 :root {
-  --bg: #2b2e12;         /* olive/dark */
-  --card: #cfd3d8;       /* light gray */
+  --bg: #2b2e12;       
+  --card: #cfd3d8;       
   --card-text: #1b1f2a;
   --muted: #5b606b;
   --border: #b9bec5;
@@ -58,7 +58,7 @@ body { margin: 0; background: var(--bg); color: #e6eaf2; font-family: Inter, sys
   font-size: .95rem;
 }
 
-.controls { display: none; } /* verstecken, damit es wie auf dem Screenshot wirkt */
+.controls { display: none; } 
 
 .loading { opacity: .7; }
 .error {
