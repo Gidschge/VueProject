@@ -1,0 +1,67 @@
+
+:root {
+  --bg: #2b2e12;         /* olive/dark */
+  --card: #cfd3d8;       /* light gray */
+  --card-text: #1b1f2a;
+  --muted: #5b606b;
+  --border: #b9bec5;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: #e6eaf2; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Black Ops One", system-ui;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: .02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card);
+  color: var(--card-text);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  overflow: hidden;
+}
+
+.card img.hero {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .body {
+  padding: 14px 16px 18px;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: .9rem;
+  line-height: 1.35;
+}
+
+.card .title {
+  padding: 10px 16px 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.controls { display: none; } /* verstecken, damit es wie auf dem Screenshot wirkt */
+
+.loading { opacity: .7; }
+.error {
+  background:#3b1220; border:1px solid #7a1c37; color:#ffdce0;
+  padding:.75rem 1rem; border-radius:.75rem; margin-bottom:1rem;
+}
