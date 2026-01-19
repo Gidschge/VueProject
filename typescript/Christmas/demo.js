@@ -1,0 +1,17 @@
+import { Santa } from "./santa.js";
+import { Child } from "./child.js";
+import { God } from "./god.js";
+import { Chancellor } from "./chancellor.js";
+const santa = new Santa();
+const child1 = new Child("Mia");
+const child2 = new Child("Noah");
+const god1 = new God("Odin");
+const ch1 = new Chancellor("Österreich");
+santa.subscribe(child1);
+santa.subscribe(child2);
+santa.subscribe(god1);
+santa.subscribe(ch1);
+santa.ringBell();
+console.log("\n--- Noah meldet sich ab ---\n");
+santa.unsubscribe(child2);
+santa.ringBell();
